@@ -1,0 +1,16 @@
+name: changePage
+on:
+  schedule:
+    - cron: '0 15 * * *'
+    - cron: '0 23 * * *'
+jobs:
+ build:    
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a multi-line script
+        run: |
+          echo test
+          mv ./adbhelper/pro/10/pay/index.html ./adbhelper/pro/10/pay/tmp
+          mv ./adbhelper/pro/10/pay/index1.html ./adbhelper/pro/10/pay/index.html
+          mv ./adbhelper/pro/10/pay/tmp ./adbhelper/pro/10/pay/index1.html
