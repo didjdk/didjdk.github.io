@@ -14,3 +14,8 @@ jobs:
           mv ./adbhelper/pro/10/pay/index.html ./adbhelper/pro/10/pay/tmp
           mv ./adbhelper/pro/10/pay/index1.html ./adbhelper/pro/10/pay/index.html
           mv ./adbhelper/pro/10/pay/tmp ./adbhelper/pro/10/pay/index1.html
+          git config --global user.email didjdk@163.com
+          git config --global user.name didjdk
+          git add .
+          git commit -m "schedule"
+          git push
