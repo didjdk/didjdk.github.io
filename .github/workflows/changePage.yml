@@ -1,7 +1,7 @@
 name: changePage
 on:
   schedule:
-    - cron: '30 14 * * *'
+    - cron: '0 13 * * *'
     - cron: '0 23 * * *'
 jobs:
  bot:    
