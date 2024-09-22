@@ -1,15 +1,32 @@
 <html>
-    <head>
-        <title>甲壳虫ADB助手</title>
-    </head>
-    <body>
-        <h1>抱歉！21:00-7:00服务器维护~~</h1>
-        <!-- 
-        <img src="qqpay.jpg"  alt="二维码" />
-        //element.innerHTML="甲壳虫ADB助手的绝大部分功能都是免费使用的，一般情况下无需开启高级功能。相对于普通版，高级版只是提供了一些便捷性功能。如果你喜欢甲壳虫ADB助手并愿意支持开发者，请用支付宝扫码向作者转账赞助8元。<br/>解锁方法：向作者转账后，请等到第二天后在“支付宝》我的》账单”里找到相应账单详情里的订单号，再在甲壳虫解锁页面里输入订单号即可解锁。请务必在转账后第二天再解锁，否则会提示单号不可用！！！";
-   
-        
-        -->
-       
-    </body>
-</html>
+ <head>
+    <title>甲壳虫ADB助手</title>
+    <script type="text/javascript">
+        function changeText(){
+            var date= new Date();
+            var h=date.getHours();
+            
+            element=document.getElementById('text');
+            if(h>=23||h<=6){
+                element.innerHTML="抱歉，21:00-7:00服务器维护~~";
+                //document.getElementById('pic').style.visibility="hidden";  
+                document.getElementById('pic1').style.visibility="hidden"; 
+                
+                
+                 //<img id="pic" src="alipay.jpg" alt="二维码" />
+            }else{
+                element.innerHTML="甲壳虫ADB助手的绝大部分功能都是免费使用的，一般情况下无需开启高级功能。相对于普通版，高级版只是提供了一些便捷性功能。如果你喜欢甲壳虫ADB助手并愿意支持开发者，可向开发者捐赠赞助，你的慷慨支持将帮助软件变得更加完善！<br/><br/>赞助方式：使用支付宝扫码直接转账8元（不需加好友），24小时内开发者会激活你的单号，届时在甲壳虫ADB助手的解锁页面输入转账单号即可获取高级版。<br/>转账单号查看方法：支付宝-->我的-->账单-->对应的转账记录-->订单号；<br/>注意转账后单号不会马上可用，需要等待开发者处理，建议赞助后第二天再使用。如果超过24小时后仍不可用，请联系开发者。";
+                
+            }
+        }
+        window.onload = changeText;
+  </script>
+ </head>
+
+ <body >
+    <h1 id="text"></h1>
+    
+    <img id="pic1" src="alipay.jpg" alt="二维码" />
+    
+</body>
+ </html>
